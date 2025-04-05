@@ -2,13 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageId>BulletSharp</PackageId>
-    <Authors>BulletSharp</Authors>
-    <Company>BulletSharp</Company>
-    <Product>BulletSharp</Product>
+    <PackageId>GFX.BulletSharp</PackageId>
+    <Authors>Andy16823</Authors>
+    <Company></Company>
+    <Product>Gfx.BulletSharp</Product>
     <RootNamespace>BulletSharp</RootNamespace>
     <AssemblyName>BulletSharp</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Gfx.BulletSharp</Title>
+    <Description>forked version of the project 
+
+https://github.com/AndresTraks/BulletSharpPInvoke</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
