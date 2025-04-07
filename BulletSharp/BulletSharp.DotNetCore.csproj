@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -10,11 +10,12 @@
     <AssemblyName>BulletSharp</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>Gfx.BulletSharp</Title>
+    <Title>GFX.BulletSharp</Title>
     <Description>forked version of the project 
 
 https://github.com/AndresTraks/BulletSharpPInvoke</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -43,6 +44,19 @@ https://github.com/AndresTraks/BulletSharpPInvoke</Description>
 
   <ItemGroup>
     <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="libs\win-x64\libbulletc.dll">
+      <Pack>true</Pack>
+      <PackagePath>runtimes\win-x64\native\libbulletc.dll</PackagePath>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="licenses\LICENSE_BulletSharp.txt" Pack="true" PackagePath="licenses\" />
+    <None Include="licenses\LICENSE_Bullet.txt" Pack="true" PackagePath="licenses\" />
   </ItemGroup>
 
 </Project>
